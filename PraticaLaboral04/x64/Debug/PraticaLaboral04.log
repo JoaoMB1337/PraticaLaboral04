@@ -1,0 +1,7 @@
+﻿  Agenda.cpp
+  Pessoa.cpp
+  PraticaLaboral04.cpp
+E:\Desenvolvimento\UFCD-0782\PraticaLaboral04\PraticaLaboral04\PraticaLaboral04.cpp(8,34): warning C4305: 'argumento': truncamento de 'double' para 'float'
+E:\Desenvolvimento\UFCD-0782\PraticaLaboral04\PraticaLaboral04\PraticaLaboral04.cpp(9,35): warning C4305: 'argumento': truncamento de 'double' para 'float'
+  Gerando Código...
+  PraticaLaboral04.vcxproj -> E:\Desenvolvimento\UFCD-0782\PraticaLaboral04\x64\Debug\PraticaLaboral04.exe
