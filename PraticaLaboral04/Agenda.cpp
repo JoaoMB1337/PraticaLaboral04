@@ -13,7 +13,7 @@ void Agenda::armazenaPessoa(string nome, int idade, float altura) {
     }
 }
 
-/* Funçao de procurar Pessoa e retornar a possição da mesma*/
+/* Funçao de procurar Pessoa e retornar a posição da mesma*/
 int Agenda::buscaPessoa(string nome){
     for (int i = 0; i < 10; i++) {
         if (Povo[i].getNome() == nome) {
@@ -30,7 +30,7 @@ void Agenda::imprimePovo(){
     }
 }
 
-/*Funçao de imprimir um certa possiçao a partir da posiçao da mesma*/
+/*Funçao de imprimir um certa posiçao a partir da posiçao da mesma*/
 void Agenda::imprimePessoa(int i){
     if (i >= 0 && i <= 10) {
         Povo[i].mostrarPessoa();
@@ -56,6 +56,3 @@ void Agenda::removePessoa(string nome){
         cout << "Nao foi encontrado nenhum nome!" << endl;
     }
 }
-
-
-
