@@ -1,11 +1,9 @@
 #include "Agenda.h"
 
-/*Funçao de inserir pessoas no array */
+/*Funï¿½ao de inserir pessoas no array */
 void Agenda::armazenaPessoa(string nome, int idade, float altura) {
     if (numPessoas < 10) {
-        Povo[numPessoas].setNome(nome);
-        Povo[numPessoas].setIdade(idade);
-        Povo[numPessoas].setAltura(altura);
+        Povo[numPessoas] = Pessoa(nome, idade, altura);
         numPessoas++;
     }
     else {
@@ -13,7 +11,7 @@ void Agenda::armazenaPessoa(string nome, int idade, float altura) {
     }
 }
 
-/* Funçao de procurar Pessoa e retornar a posição da mesma*/
+/* Funï¿½ao de procurar Pessoa e retornar a posiï¿½ï¿½o da mesma*/
 int Agenda::buscaPessoa(string nome){
     for (int i = 0; i < 10; i++) {
         if (Povo[i].getNome() == nome) {
@@ -23,14 +21,14 @@ int Agenda::buscaPessoa(string nome){
     return -1;
 }
 
-/*Funçao de imprimir todas as pessoas limitado a numero de pessoas la dentro */
+/*Funï¿½ao de imprimir todas as pessoas limitado a numero de pessoas la dentro */
 void Agenda::imprimePovo(){
     for (int i = 0; i < numPessoas; i++){
         Povo[i].mostrarPessoa();
     }
 }
 
-/*Funçao de imprimir um certa posiçao a partir da posiçao da mesma*/
+/*Funï¿½ao de imprimir um certa posiï¿½ao a partir da posiï¿½ao da mesma*/
 void Agenda::imprimePessoa(int i){
     if (i >= 0 && i <= 10) {
         Povo[i].mostrarPessoa();
@@ -39,7 +37,7 @@ void Agenda::imprimePessoa(int i){
         cout << "Numero inserido fora de alcance!!" << endl;
     }
 }
-/* Funçao que procura pessoa e elimina a mesma*/
+/* Funï¿½ao que procura pessoa e elimina a mesma*/
 void Agenda::removePessoa(string nome){
     bool verificaNome = false;
     for (int i = 0; i < numPessoas; i++) {
@@ -49,7 +47,7 @@ void Agenda::removePessoa(string nome){
             }
             numPessoas--;
             verificaNome = true;
-           return; //Só para eliminar o primeiro elemento com o nome certo
+           return; //Sï¿½ para eliminar o primeiro elemento com o nome certo
         }
     }
     if (!verificaNome) {
